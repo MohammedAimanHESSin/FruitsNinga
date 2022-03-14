@@ -8,14 +8,9 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import logic.GameObject;
 
-public class Mellon implements Product,GameObject {
+public class Mellon extends Product implements GameObject {
 
 	
-
-
-    double limit;
-    ImageView imageView;
-	BufferedImage[] images ;
         public Mellon() {
             		  this.setImage();
 
@@ -56,19 +51,19 @@ public class Mellon implements Product,GameObject {
 	@Override
 	public Boolean isSliced() {
 		// TODO Auto-generated method stub
-		return null;
+		return flagSLiced;
 	}
 
 	@Override
 	public Boolean hasMovedOffScreen() {
 		// TODO Auto-generated method stub
-		return null;
+		return flagSLiced;
 	}
 
 	@Override
 	public void slice() {
 		this.imageView.setImage(SwingFXUtils.toFXImage(this.images[1], null));
-		
+		this.flagSLiced=true;
 	}
 
 	@Override
@@ -106,7 +101,7 @@ public class Mellon implements Product,GameObject {
 	    
 	       	 File file1 = new File("./src/icons/Fullmelon.png");
 	          image1 = new Image(file1.toURI().toString());
-	         File file2 = new File("./src/icons/darkbomb.png");
+	         File file2 = new File("./src/icons/lastmelon.png");
 	         image2 = new Image(file2.toURI().toString());
 	          
 	        this.images = new BufferedImage[2];
@@ -114,6 +109,12 @@ public class Mellon implements Product,GameObject {
 	     	this.images[1]=SwingFXUtils.fromFXImage(image2,null);
 	      	
 	    }
+
+	@Override
+	public String getObjectType() {
+		// TODO Auto-generated method stub
+		return "Mellon";
+	}
 
   
 

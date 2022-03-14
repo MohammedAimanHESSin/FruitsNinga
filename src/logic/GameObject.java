@@ -7,7 +7,7 @@ public interface GameObject {
 	/**
 	* @return the type of game object
 	*/
-	//public ENUM getObjectType ();
+    public String getObjectType ();
 	/*
 	* @return X location of game object
 	*/

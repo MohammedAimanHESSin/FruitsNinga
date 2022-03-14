@@ -9,16 +9,14 @@ import javafx.scene.image.ImageView;
 
 import logic.GameObject;
 
-public class Orange implements Product,GameObject  {
+public class Orange extends Product implements GameObject  {
 
 
-    double limit;
-        ImageView imageView;
-	BufferedImage[] images ;
-
+   
 	public Orange() {
+		super() ;
 		  this.setImage();
-                  this.imageView=new ImageView();
+         this.imageView=new ImageView();
 		 
 }
 
@@ -55,20 +53,20 @@ public class Orange implements Product,GameObject  {
 	@Override
 	public Boolean isSliced() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.flagSLiced;
 	}
 
 	@Override
 	public Boolean hasMovedOffScreen() {
 		// TODO Auto-generated method stub
-		return null;
+		return flagSLiced;
 	}
         
 
 	@Override
 	public void slice() {
 		this.imageView.setImage(SwingFXUtils.toFXImage(this.images[1], null));
-		
+		this.flagSLiced=true;
 	}
 
 	@Override
@@ -105,7 +103,7 @@ public class Orange implements Product,GameObject  {
 	    
 	       	 File file1 = new File("./src/icons/fullOrange.png");
 	          image1 = new Image(file1.toURI().toString());
-	         File file2 = new File("./src/icons/twohalforange.png");
+	         File file2 = new File("./src/icons/lastorange.png");
 	         image2 = new Image(file2.toURI().toString());
 	          
 	        this.images = new BufferedImage[2];
@@ -113,5 +111,11 @@ public class Orange implements Product,GameObject  {
 	     	this.images[1]=SwingFXUtils.fromFXImage(image2,null);
 	      	
 	    }
+
+	@Override
+	public String getObjectType() {
+		// TODO Auto-generated method stub
+		return "Orange";
+	}
 
 }
