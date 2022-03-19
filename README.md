@@ -31,7 +31,7 @@ It is a single player game in which player slices fruits with a blade controlled
  ![This is an image](https://github.com/osamasherif22/FruitsNinga/blob/master/FN%20UML%20DIAGRAM.png)
 ## Authors
 - **[Moahmmed Aiman](https://github.com/MohammedAimanHESSin)**
-- **[Osama Sherif](https://github.com/kevinwairi)**
+ - **[Osama Sherif](https://github.com/osamasherif22)**
 - **[Abdulrahman Habib](https://github.com/habiib1999)**
 
 ---
