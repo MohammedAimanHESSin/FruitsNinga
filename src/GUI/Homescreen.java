@@ -53,7 +53,11 @@ public class Homescreen {
     {
         	scene = new Scene(root, 1000, 600);
         	
-	
+	        
+	        
+
+                 
+            
             File file1 = new File("./src/icons/background2.png");
 	        Image image1 = new Image(file1.toURI().toString());
             imageView1 = new ImageView();
