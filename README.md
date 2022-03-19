@@ -9,11 +9,10 @@
 It is a single player game in which player slices fruits with a blade controlled by mouse swipes (finger swipes on touch screen in case of smartphones). As the fruits are thrown onto the screen, the player swipes the mouse across the screen to create a slicing motion, attempting to slice the fruit into two halves.
 
 ## Included Design Pattern 
-1. **Command Pattern**
-2. **Factory Method Pattern**
+1. **Command Pattern** in saving and loading game state.
+2. **Factory Method Pattern** in generate game objects.
 3. **Singleton Pattern**
-4. **Observer Pattern**
-5. **MVC**
+4. **MVC**
 
 ## Sample run of the game
 - **Start Screen**
@@ -28,7 +27,8 @@ It is a single player game in which player slices fruits with a blade controlled
 
  ![This is an image](https://github.com/osamasherif22/FruitsNinga/blob/master/game-pics/3.PNG) 
 
-
+## UML class Diagram 
+ ![This is an image](https://github.com/osamasherif22/FruitsNinga/blob/master/FN%20UML%20DIAGRAM.png)
 ## Authors
 - **[Moahmmed Aiman](https://github.com/MohammedAimanHESSin)**
 - **[Osama Sherif](https://github.com/kevinwairi)**
